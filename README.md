@@ -24,7 +24,7 @@ Setiap karakter memiliki HP, kemampuan menyerang, dan skill khusus.
 Agar program dapat dijalankan dengan benar, pastikan susunan folder repository mengikuti struktur berikut:
 
 ```text
-Monster-Battle-RPG/
+AldhinovaArethusa_H1D025161_ShiftG_ShiftB_1/
 │
 ├── Project_Responsi_Java/
 │   ├── BisaMenyerang.java
@@ -35,22 +35,22 @@ Monster-Battle-RPG/
 │   ├── Petarung.java
 │   └── Penyihir.java
 │
-├── README.md
-│
-└── .gitignore (opsional)
+└── README.md
 ```
 
 **Catatan:**
-- Semua file Java harus berada di dalam folder `Project_Responsi_Java`.
+- Semua file Java berada di dalam folder `Project_Responsi_Java`.
 - Setiap file Java menggunakan deklarasi `package Project_Responsi_Java;` pada bagian paling atas.
-- Jangan meletakkan file `.java` di luar folder package tersebut.
-- Folder `out` tidak wajib disertakan karena akan dibuat secara otomatis saat proses kompilasi.
+- Folder `Project_Responsi_Java` harus sejajar dengan file `README.md`.
+- File `.class` merupakan hasil kompilasi dan tidak wajib diunggah ke GitHub.
 
 ## Cara Menjalankan Program
 
-Pastikan Java Development Kit (JDK) sudah terinstal di komputer.
+Pastikan Java Development Kit (JDK) sudah terinstal di komputer. Program dapat dijalankan melalui Terminal, Command Prompt, atau terminal VS Code.
 
 ### 1. Clone Repository GitHub
+
+Unduh repository menggunakan perintah berikut:
 
 ```bash
 git clone https://github.com/xyen12/AldhinovaArethusa_H1D025161_ShiftG_ShiftB_1.git
@@ -58,31 +58,50 @@ git clone https://github.com/xyen12/AldhinovaArethusa_H1D025161_ShiftG_ShiftB_1.
 
 ### 2. Masuk ke Folder Repository
 
+Setelah proses clone selesai, masuk ke folder repository:
+
 ```bash
 cd AldhinovaArethusa_H1D025161_ShiftG_ShiftB_1
 ```
 
+Pastikan posisi terminal berada di folder utama repository yang berisi folder `Project_Responsi_Java` dan file `README.md`.
+
 ### 3. Compile Seluruh File Java
 
-```bash
-javac -d . *.java
+Kompilasi seluruh file Java yang berada di dalam folder `Project_Responsi_Java` menggunakan perintah berikut:
+
+**Windows (PowerShell):**
+
+```powershell
+$files = (Get-ChildItem .\Project_Responsi_Java\*.java).FullName
+javac -d . $files
 ```
 
+**Linux/macOS (Terminal):**
+
+```bash
+javac -d . Project_Responsi_Java/*.java
+```
+
+Jika proses kompilasi berhasil, file `.class` akan dibuat secara otomatis di dalam folder `Project_Responsi_Java`.
+
 ### 4. Jalankan Program
+
+Setelah proses kompilasi selesai tanpa error, jalankan program menggunakan perintah:
 
 ```bash
 java Project_Responsi_Java.Main
 ```
 
-Jika berhasil, permainan Monster Battle RPG akan berjalan melalui terminal dan pemain dapat mulai memilih karakter untuk bertarung melawan monster.
+Program Monster Battle RPG akan berjalan melalui terminal. Pemain dapat memilih karakter Petarung atau Penyihir, kemudian memulai pertarungan melawan monster.
 
 ### 5. Persyaratan Sistem
 
-- Java Development Kit (JDK) sudah terinstal.
-- Terminal atau Command Prompt untuk menjalankan perintah.
-- Seluruh file Java tersedia di dalam repository.
-- Koneksi internet diperlukan untuk melakukan clone repository dari GitHub.
-
+- Java Development Kit (JDK) sudah terinstal di komputer.
+- Terminal, Command Prompt, atau terminal VS Code.
+- Seluruh file Java tersedia di dalam folder `Project_Responsi_Java`.
+- Koneksi internet diperlukan untuk mengunduh repository dari GitHub.
+  
 ## Screenshot Program
 
 ### 1. Pemilihan Karakter dan Kemunculan Monster
