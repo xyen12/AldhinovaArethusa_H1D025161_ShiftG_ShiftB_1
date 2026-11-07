@@ -52,10 +52,8 @@ Pastikan Java Development Kit (JDK) sudah terinstal di komputer.
 
 ### 1. Clone Repository GitHub
 
-Jalankan perintah berikut pada terminal:
-
 ```bash
-git clone https://github.com/xyen12/AldhinovaArethusa_H1D025161_ShiftG_ShiftB_1
+git clone https://github.com/xyen12/AldhinovaArethusa_H1D025161_ShiftG_ShiftB_1.git
 ```
 
 ### 2. Masuk ke Folder Repository
@@ -66,15 +64,11 @@ cd AldhinovaArethusa_H1D025161_ShiftG_ShiftB_1
 
 ### 3. Compile Seluruh File Java
 
-Jalankan perintah berikut untuk mengompilasi seluruh file Java:
-
 ```bash
-javac -d . Project_Responsi_Java/*.java
+javac -d . *.java
 ```
 
 ### 4. Jalankan Program
-
-Setelah proses kompilasi berhasil, jalankan program menggunakan perintah:
 
 ```bash
 java Project_Responsi_Java.Main
@@ -86,7 +80,7 @@ Jika berhasil, permainan Monster Battle RPG akan berjalan melalui terminal dan p
 
 - Java Development Kit (JDK) sudah terinstal.
 - Terminal atau Command Prompt untuk menjalankan perintah.
-- Seluruh file Java tersimpan dalam folder `Project_Responsi_Java`.
+- Seluruh file Java tersedia di dalam repository.
 - Koneksi internet diperlukan untuk melakukan clone repository dari GitHub.
 
 ## Screenshot Program
