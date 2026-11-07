@@ -19,33 +19,63 @@ Setiap karakter memiliki HP, kemampuan menyerang, dan skill khusus.
 - `Monster.java`: Implementasi karakter Monster.
 - `Main.java`: Class utama untuk menjalankan permainan.
 
-## Cara Menjalankan Program
+Struktur Folder Repository
+
+Agar program dapat dijalankan dengan benar, pastikan susunan folder repository mengikuti struktur berikut:
+
+Monster-Battle-RPG/
+│
+├── Project_Responsi_Java/
+│   ├── BisaMenyerang.java
+│   ├── BisaSkill.java
+│   ├── Karakter.java
+│   ├── Main.java
+│   ├── Monster.java
+│   ├── Petarung.java
+│   └── Penyihir.java
+│
+├── README.md
+│
+└── .gitignore (opsional)
+
+Catatan:
+
+Semua file Java harus berada di dalam folder Project_Responsi_Java.
+
+Setiap file Java menggunakan deklarasi package Project_Responsi_Java; pada bagian paling atas.
+
+Jangan meletakkan file .java di luar folder package tersebut.
+
+Folder out tidak wajib disertakan karena akan dibuat secara otomatis saat proses kompilasi.
+
+Cara Menjalankan Program
 
 Pastikan Java Development Kit (JDK) sudah terinstal di komputer.
 
-1. Clone repository GitHub:
+1. Clone Repository GitHub
 
-```bash
 git clone https://github.com/xyen12/AldhinovaArethusa_H1D025161_ShiftG_ShiftB_1
-```
 
-2. Masuk ke folder repository:
+2. Masuk ke Folder Repository
 
-```bash
-cd Monster-Battle-RPG
-```
+cd AldhinovaArethusa_H1D025161_ShiftG_ShiftB_1
 
-3. Compile seluruh file Java:
+3. Compile Seluruh File Java
 
-```bash
-javac -d . *.java
-```
+Untuk Windows (PowerShell):
 
-4. Jalankan program:
+$files = (Get-ChildItem .\Project_Responsi_Java\*.java).FullName
+javac -d out $files
 
-```bash
-java Project_Responsi_Java.Main
-```
+Untuk Linux/macOS (Terminal):
+
+javac -d out Project_Responsi_Java/*.java
+
+4. Jalankan Program
+
+java -cp out Project_Responsi_Java.Main
+
+Jika proses kompilasi berhasil, permainan Monster Battle RPG akan dijalankan melalui terminal.
 
 ## Screenshot Program
 
