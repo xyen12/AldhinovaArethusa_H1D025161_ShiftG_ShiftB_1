@@ -42,7 +42,7 @@ java Project_Responsi_Java.Main
 
 Menampilkan proses awal permainan, ketika pemain memilih karakter Petarung atau Penyihir dan memasukkan nama karakter. Setelah itu, sistem membuat karakter pemain dan menampilkan monster yang akan menjadi lawan.
 
-<img width="1288" height="557" alt="Pemilihan Karakter dan Kemunculan Monster" src="https://github.com/user-attachments/assets/73191c75-2f3e-4610-baa9-f54dc107cc6b" />
+<img width="1288" height="557" alt="Screenshot 2026-11-07 193039" src="https://github.com/user-attachments/assets/706458fb-a2f0-4f0b-b9a0-9c283080d3f0" />
 
 ---
 
@@ -50,7 +50,7 @@ Menampilkan proses awal permainan, ketika pemain memilih karakter Petarung atau 
 
 Menampilkan proses pertarungan antara pemain dan monster. Pemain dapat memilih aksi menyerang atau menggunakan skill khusus. Setelah pemain melakukan aksi, monster akan membalas serangan dan HP kedua karakter akan diperbarui.
 
-<img width="1276" height="805" alt="Proses Pertarungan dan Penggunaan Skill" src="https://github.com/user-attachments/assets/985f5963-4f9e-456b-95f6-8a073a5bbdad" />
+<img width="1276" height="805" alt="Screenshot 2026-11-07 193130" src="https://github.com/user-attachments/assets/1145783d-e4b5-4111-a588-bce30480cdc2" />
 
 ---
 
@@ -58,7 +58,7 @@ Menampilkan proses pertarungan antara pemain dan monster. Pemain dapat memilih a
 
 Menampilkan informasi status pemain dan monster, meliputi nama, jenis karakter, serta jumlah HP saat pertarungan berlangsung.
 
-<img width="1274" height="386" alt="Status Karakter" src="https://github.com/user-attachments/assets/42502dfd-185c-46fa-915b-e6da4fa49e37" />
+<img width="1274" height="386" alt="Screenshot 2026-11-07 193154" src="https://github.com/user-attachments/assets/a176b4e4-7ca2-4b0f-a9ed-8b1bdc40338a" />
 
 ---
 
@@ -66,7 +66,7 @@ Menampilkan informasi status pemain dan monster, meliputi nama, jenis karakter, 
 
 Menampilkan kondisi ketika pemain berhasil mengalahkan monster. Sistem menampilkan pesan **SELAMAT! KAMU BERHASIL MENGALAHKAN MONSTER!** ketika HP monster mencapai nol.
 
-<img width="1278" height="304" alt="Kondisi Kemenangan" src="https://github.com/user-attachments/assets/74282749-c8cf-42e0-9a8f-4613b5009830" />
+<img width="1274" height="386" alt="Screenshot 2026-11-07 193154" src="https://github.com/user-attachments/assets/41ab8637-b574-45e0-b045-2a71d8889aec" />
 
 ---
 
@@ -74,4 +74,4 @@ Menampilkan kondisi ketika pemain berhasil mengalahkan monster. Sistem menampilk
 
 Menampilkan kondisi ketika pemain dikalahkan oleh monster. Sistem menampilkan pesan **GAME OVER! KAMU DIKALAHKAN MONSTER!** ketika HP pemain mencapai nol.
 
-<img width="1284" height="493" alt="Kondisi Kekalahan" src="https://github.com/user-attachments/assets/26c03168-6a36-438c-b648-434e4aecdfd6" />
+<img width="1284" height="493" alt="Screenshot 2026-11-07 193320" src="https://github.com/user-attachments/assets/4a6aefa9-faed-4718-acb3-0a1339bf370d" />
