@@ -21,16 +21,27 @@ Setiap karakter memiliki HP, kemampuan menyerang, dan skill khusus.
 
 ## Cara Menjalankan Program
 
-Pastikan Java JDK sudah terinstal.
+Pastikan Java Development Kit (JDK) sudah terinstal di komputer.
 
-1. Buka terminal pada folder yang berisi folder `Project_Responsi_Java`.
-2. Jalankan perintah compile:
+1. Clone repository GitHub:
 
 ```bash
-javac Project_Responsi_Java/*.java
+git clone https://github.com/xyen12/Monster-Battle-RPG.git
 ```
 
-3. Jalankan program:
+2. Masuk ke folder repository:
+
+```bash
+cd Monster-Battle-RPG
+```
+
+3. Compile seluruh file Java:
+
+```bash
+javac -d . *.java
+```
+
+4. Jalankan program:
 
 ```bash
 java Project_Responsi_Java.Main
