@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class Main {
 
+    // Konstanta damage monster
     public static final int DAMAGE_MONSTER = 15;
 
+    // Main Method
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
@@ -17,6 +19,7 @@ public class Main {
         System.out.println("       MONSTER BATTLE RPG       ");
         System.out.println("================================");
 
+        // Memilih karakter
         System.out.println("Pilih karakter:");
         System.out.println("1. Petarung");
         System.out.println("2. Penyihir");
@@ -38,18 +41,21 @@ public class Main {
             return;
         }
 
+        // Menampilkan status awal
         System.out.println("\n-- Karakter berhasil dipilih --");
         pemain.tampilkanStatus();
 
         System.out.println("\n-- Musuh Muncul --");
         monster.tampilkanStatus();
 
+        // Polimorfisme Interface
         BisaMenyerang seranganPemain = (BisaMenyerang) pemain;
         BisaSkill skillPemain = (BisaSkill) pemain;
 
         pemain.bertarung(monster);
         monster.bertarung(pemain);
 
+        // Perulangan permainan
         while (pemain.getHp() > 0 && monster.getHp() > 0) {
 
             System.out.println("\n================================");
@@ -62,6 +68,7 @@ public class Main {
 
             int aksi = input.nextInt();
 
+            // Menjalankan aksi pemain
             if (aksi == 1) {
                 seranganPemain.serang(monster);
 
@@ -82,18 +89,22 @@ public class Main {
                 continue;
             }
 
+            // Mengecek kondisi monster
             if (monster.getHp() <= 0) {
                 break;
             }
 
+            // Giliran monster menyerang
             System.out.println("\n-- Giliran Monster --");
             monster.serang(pemain);
 
+            // Menampilkan status pertarungan
             System.out.println("\n-- Status Pertarungan --");
             System.out.println(pemain.getNama() + " HP: " + pemain.getHp());
             System.out.println(monster.getNama() + " HP: " + monster.getHp());
         }
 
+        // Menampilkan hasil permainan
         System.out.println("\n================================");
 
         if (pemain.getHp() > 0) {

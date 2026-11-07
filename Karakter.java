@@ -7,6 +7,7 @@ public abstract class Karakter {
     private final String jenis;
     private boolean sedangBertarung;
 
+    // Constructor Overloading
     public Karakter(String nama, int hp) {
         this(nama, hp, "Karakter");
     }
@@ -19,6 +20,7 @@ public abstract class Karakter {
         this.sedangBertarung = false;
     }
 
+    // Getter dan Setter
     public String getNama() {
         return nama;
     }
@@ -29,6 +31,10 @@ public abstract class Karakter {
 
     public int getHp() {
         return hp;
+    }
+
+    public int getHpMaksimal() {
+        return hpMaksimal;
     }
 
     public void setHp(int hp) {
@@ -53,11 +59,13 @@ public abstract class Karakter {
         this.sedangBertarung = sedangBertarung;
     }
 
+    // Method untuk menampilkan status karakter
     public void tampilkanStatus() {
         System.out.println("Nama: " + nama);
         System.out.println("Jenis: " + jenis);
         System.out.println("HP: " + hp + "/" + hpMaksimal);
     }
 
+    // Abstract Method
     public abstract void bertarung(Karakter target);
 }

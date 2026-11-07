@@ -3,10 +3,12 @@ package Project_Responsi_Java;
 public class Petarung extends Karakter
         implements BisaMenyerang, BisaSkill {
 
+    // Constructor
     public Petarung(String nama) {
         super(nama, 120, "Petarung");
     }
 
+    // Method Overriding
     @Override
     public void bertarung(Karakter target) {
         if (getHp() > 0 && target.getHp() > 0) {
@@ -17,9 +19,11 @@ public class Petarung extends Karakter
             System.out.println("Petarung tidak dapat bertarung!");
         }
 
+        // Memanggil method dari class induk
         super.tampilkanStatus();
     }
 
+    // Implementasi Interface BisaMenyerang
     @Override
     public void serang(Karakter target) {
         if (getHp() > 0 && target.getHp() > 0) {
@@ -31,6 +35,7 @@ public class Petarung extends Karakter
         }
     }
 
+    // Implementasi Interface BisaSkill
     @Override
     public void gunakanSkill(Karakter target) {
         if (getHp() > 0 && target.getHp() > 0) {

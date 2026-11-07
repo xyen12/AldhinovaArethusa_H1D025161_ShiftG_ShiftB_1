@@ -2,10 +2,12 @@ package Project_Responsi_Java;
 
 public class Monster extends Karakter implements BisaMenyerang {
 
+    // Constructor
     public Monster(String nama) {
         super(nama, 150, "Monster");
     }
 
+    // Method Overriding
     @Override
     public void bertarung(Karakter target) {
         if (getHp() > 0 && target.getHp() > 0) {
@@ -17,6 +19,7 @@ public class Monster extends Karakter implements BisaMenyerang {
         }
     }
 
+    // Implementasi Interface BisaMenyerang
     @Override
     public void serang(Karakter target) {
         if (getHp() > 0 && target.getHp() > 0) {
