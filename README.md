@@ -26,7 +26,7 @@ Pastikan Java Development Kit (JDK) sudah terinstal di komputer.
 1. Clone repository GitHub:
 
 ```bash
-git clone https://github.com/xyen12/AldhinovaArethusa_H1D025161_Shift-G_Shift-B_1
+git clone https://github.com/xyen12/AldhinovaArethusa_H1D025161_ShiftG_ShiftB_1
 ```
 
 2. Masuk ke folder repository:
